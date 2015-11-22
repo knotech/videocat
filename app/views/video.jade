@@ -1,0 +1,120 @@
+extends layout
+
+block content
+	#canvas-wrapper(style="position: relative;")
+		.navbar.navbar-inverse.navbar-fixed-bottom(role='navigation')
+			.container			
+				.navbar-header
+					button.navbar-toggle.bottom(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+						span.sr-only Toggle navigation
+						img.brand-icon(src="/assets/img/logos/knotech_icon_01.png")
+					a.navbar-brand(href='/')
+						img.brand-logo(src="/assets/img/logos/knotech_logo_01.png")
+				.navbar-collapse.collapse.navbar-right
+					ul.nav.navbar-nav
+						li.dropdown
+							a.dropdown-toggle(href='#', data-toggle='dropdown')
+								| Effects 
+								span.caret
+									ul.dropdown-menu.inverse-dropdown(role='menu')
+										li.dropdown-header
+										li
+											span(class='label label-inverse text-center') Color On/Off
+											form
+												input#color-toggle(type='checkbox', name='color-toggle', value='0')
+										li
+											span(class='label label-inverse text-center') Lower Threshold
+											form
+												input#lower-threshold(type='range', name='lower-threshold', min='0', max='254', value='24')
+										li.dropdown-header
+										li
+											span(class='label label-inverse text-center') Upper Threshold
+											form
+												input#upper-threshold(type='range', name='upper-threshold', min='1', max='255', value='32')
+										li
+											a(href='#') Something else here
+										li.divider
+										li.dropdown-header Nav header
+										li
+											a(href='#') Separated link
+										li
+											a(href='#') One more separated link
+						li.dropdown
+							a.dropdown-toggle(href='#', data-toggle='dropdown')
+								| Call 
+								span.caret
+									ul.dropdown-menu(role='menu')
+										li
+											a(href='#') Action
+										li
+											a(href='#') Another action
+										li
+											a(href='#') Something else here
+										li.divider
+										li.dropdown-header Nav header
+										li
+											a(href='#') Separated link
+										li
+											a(href='#') One more separated link
+						li.dropdown
+							a.dropdown-toggle(href='#', data-toggle='dropdown')
+								| Messages
+								span.caret
+									ul.dropdown-menu(role='menu')
+										li
+											a(href='#') Action
+										li
+											a(href='#') Another action
+										li
+											a(href='#') Something else here
+										li.divider
+										li.dropdown-header Nav header
+										li
+											a(href='#') Separated link
+										li
+											a(href='#') One more separated link
+						li.dropdown
+							a.dropdown-toggle(href='#', data-toggle='dropdown')
+								| Record 
+								span.caret
+									ul.dropdown-menu(role='menu')
+										li
+											a(href='#') Action
+										li
+											a(href='#') Another action
+										li
+											a(href='#') Something else here
+										li.divider
+										li.dropdown-header Nav header
+										li
+											a(href='#') Separated link
+										li
+											a(href='#') One more separated link
+						li.dropdown
+							a.dropdown-toggle(href='#', data-toggle='dropdown')
+								| Dropdown 
+								span.caret
+									ul.dropdown-menu(role='menu')
+										li
+											a(href='#') Action
+										li
+											a(href='#') Another action
+										li
+											a(href='#') Something else here
+										li.divider
+										li.dropdown-header Nav header
+										li
+											a(href='#') Separated link
+										li
+											a(href='#') One more separated link
+			// /.nav-collapse
+
+
+block js
+	//- So not best practicing!!!
+	//- script(src="/js/bigbro.js")
+	script(src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.9/p5.js')
+	script(src='/js/lib/p5.dom.js')
+	script(src='/js/video_sketch.js')
+	//- script(src="/js/video.js")
+	

@@ -1,0 +1,34 @@
+// .video-wrapper {
+// 	width: 100%;
+// 	height: 600px;
+// 	background-color: #F2DE9F;
+// 	// background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/dc/Sky-View_ForestWander.JPG');
+// 	// background-size: cover;
+// 	text-align:center;
+
+	#v {
+		position: absolute;
+		visibility: hidden;	
+	}
+
+	#canvas-wrapper {
+		text-align: center;
+		width: 100%;
+		height: 100%;
+		background-image: url('http://wallpoper.com/images/00/45/10/86/sea-sunset-4_00451086.jpg');
+		background-size: cover;
+		border-radius: 5px;
+		margin: auto auto;
+	}
+
+	canvas {
+		margin: auto auto;
+		background-color: rgba(0,0,0,0.0);
+		border: 1px solid transparent;
+		border-color: #333;
+		border-radius: 5px;
+		-moz-box-shadow: 5px 5px 5px rgba(8, 8, 8, 0.2), -5px -5px 5px rgba(8, 8, 8, 0.2), -5px 5px 5px rgba(8, 8, 8, 0.2), 5px -5px 5px rgba(8, 8, 8, 0.2);
+		-webkit-box-shadow: 5px 5px 5px rgba(8, 8, 8, 0.2), -5px -5px 5px rgba(8, 8, 8, 0.2), -5px 5px 5px rgba(8, 8, 8, 0.2), 5px -5px 5px rgba(8, 8, 8, 0.2);
+		box-shadow: 5px 5px 5px rgba(8, 8, 8, 0.2), -5px -5px 5px rgba(8, 8, 8, 0.2), -5px 5px 5px rgba(8, 8, 8, 0.2), 5px -5px 5px rgba(8, 8, 8, 0.2);
+	}
+// }

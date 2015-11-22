@@ -1,0 +1,13 @@
+@import "sass/partials/partials";
+@import "sass/modules/modules";
+
+@-ms-viewport {
+   width: device-width;
+   zoom: 1;
+}
+@-o-viewport { 
+   width: device-width;
+}
+@viewport {
+   width: device-width; 
+}

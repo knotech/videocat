@@ -1,0 +1,30 @@
+// Colors
+$white: #ffffff;
+$black: #080808;
+
+// Brand Colors
+$primary: #f26432; // This is the logo red-orange.
+$secondary: #222;
+
+// Responsive Breakpoints
+$breakpoints: (
+	'small' : (min-device-width: 350px) and (max-device-width: 767px),
+	'medium' : (min-device-width: 768px),
+	'large'  : (min-device-width: 1200px)
+);
+
+@mixin respond-to($name) {
+	// If the key exists in the map
+	@if map-has-key($breakpoints, $name) {
+		// Prints a media query based on the value
+		@media #{inspect(map-get($breakpoints, $name))} {
+			@content;
+		}
+	}
+
+	// If the key doesn't exist in the map
+	@else {
+	@warn "Unfortunately, no value could be retrieved from `#{$breakpoints}`. "
+    	+ "Please make sure it is defined in `$breakpoints` map.";
+	}
+}

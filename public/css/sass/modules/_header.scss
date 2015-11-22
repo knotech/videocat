@@ -1,0 +1,13 @@
+.header-background {
+	background-color: #333;
+
+	@include respond-to(small) {
+		display: none;
+	}
+
+	.header-image-fg {
+		width: 50%;
+		height: auto;
+		margin: 1% 25%;
+	}
+}

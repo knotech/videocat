@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:200,400);
+body {
+  padding: 0;
+  letter-spacing: 1.3px; }
+
+.header-background {
+  background-color: #333; }
+  @media (max-device-width: 767px) {
+    .header-background {
+      display: none; } }
+  .header-background .header-image-fg {
+    width: 50%;
+    height: auto;
+    margin: 1% 25%; }
+
+.navbar a.navbar-brand {
+  height: 100%;
+  width: auto;
+  margin-top: 9px;
+  margin-left: 9px;
+  padding: 9px;
+  border: 1px solid transparent;
+  border-color: #333;
+  border-radius: 5px;
+  -moz-box-shadow: 2px 2px 5px rgba(8, 8, 8, 0.075), -2px -2px 5px rgba(8, 8, 8, 0.075), -2px 2px 5px rgba(8, 8, 8, 0.075), 2px -2px 5px rgba(8, 8, 8, 0.075);
+  -webkit-box-shadow: 2px 2px 5px rgba(8, 8, 8, 0.075), -2px -2px 5px rgba(8, 8, 8, 0.075), -2px 2px 5px rgba(8, 8, 8, 0.075), 2px -2px 5px rgba(8, 8, 8, 0.075);
+  box-shadow: 2px 2px 5px rgba(8, 8, 8, 0.075), -2px -2px 5px rgba(8, 8, 8, 0.075), -2px 2px 5px rgba(8, 8, 8, 0.075), 2px -2px 5px rgba(8, 8, 8, 0.075); }
+  @media (min-device-width: 768px) {
+    .navbar a.navbar-brand {
+      margin-top: 2px; } }
+  @media (min-device-width: 1200px) {
+    .navbar a.navbar-brand {
+      margin-top: 2px; } }
+  .navbar a.navbar-brand img.brand-logo {
+    height: 25px;
+    width: auto; }
+
+.navbar .navbar-header button.navbar-toggle {
+  -moz-box-shadow: 2px 2px 5px rgba(8, 8, 8, 0.075), -2px -2px 5px rgba(8, 8, 8, 0.075), -2px 2px 5px rgba(8, 8, 8, 0.075), 2px -2px 5px rgba(8, 8, 8, 0.075);
+  -webkit-box-shadow: 2px 2px 5px rgba(8, 8, 8, 0.075), -2px -2px 5px rgba(8, 8, 8, 0.075), -2px 2px 5px rgba(8, 8, 8, 0.075), 2px -2px 5px rgba(8, 8, 8, 0.075);
+  box-shadow: 2px 2px 5px rgba(8, 8, 8, 0.075), -2px -2px 5px rgba(8, 8, 8, 0.075), -2px 2px 5px rgba(8, 8, 8, 0.075), 2px -2px 5px rgba(8, 8, 8, 0.075); }
+  .navbar .navbar-header button.navbar-toggle img.brand-icon {
+    height: 25px;
+    width: auto; }
+
+.navbar .inverse-dropdown {
+  background-color: #222;
+  border-color: #080808; }
+  .navbar .inverse-dropdown > li > a {
+    color: #999; }
+    .navbar .inverse-dropdown > li > a:hover {
+      color: #fff;
+      background-color: #000; }
+  .navbar .inverse-dropdown > .divider {
+    background-color: #000; }
+
+#v {
+  position: absolute;
+  visibility: hidden; }
+
+#canvas-wrapper {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-image: url("http://wallpoper.com/images/00/45/10/86/sea-sunset-4_00451086.jpg");
+  background-size: cover;
+  border-radius: 5px;
+  margin: auto auto; }
+
+canvas {
+  margin: auto auto;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-color: #333;
+  border-radius: 5px;
+  -moz-box-shadow: 5px 5px 5px rgba(8, 8, 8, 0.2), -5px -5px 5px rgba(8, 8, 8, 0.2), -5px 5px 5px rgba(8, 8, 8, 0.2), 5px -5px 5px rgba(8, 8, 8, 0.2);
+  -webkit-box-shadow: 5px 5px 5px rgba(8, 8, 8, 0.2), -5px -5px 5px rgba(8, 8, 8, 0.2), -5px 5px 5px rgba(8, 8, 8, 0.2), 5px -5px 5px rgba(8, 8, 8, 0.2);
+  box-shadow: 5px 5px 5px rgba(8, 8, 8, 0.2), -5px -5px 5px rgba(8, 8, 8, 0.2), -5px 5px 5px rgba(8, 8, 8, 0.2), 5px -5px 5px rgba(8, 8, 8, 0.2); }
+
+@-ms-viewport {
+  width: device-width;
+  zoom: 1; }
+
+@-o-viewport {
+  width: device-width; }
+
+@viewport {
+  width: device-width; }

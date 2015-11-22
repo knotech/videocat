@@ -1,0 +1,20 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width,initial-scale=1.0')
+		title= title
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.css')
+		link(rel='stylesheet', href='/css/main.css')
+		
+		if ENV_DEVELOPMENT
+			script(src='http://localhost:35729/livereload.js')
+
+	body(style='background-color:rgba(230,190,64,0.5);')
+		block content
+
+		script(src="https://code.jquery.com/jquery-2.1.4.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.min.js")
+		script(src='js/fancyNav.js')
+		block js
